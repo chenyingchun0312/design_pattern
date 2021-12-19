@@ -7,13 +7,13 @@
 
 struct subject
 {
-    struct observer *observer_list[MAX_OBSERVER_NUMS];              // 存放observer对象
-    int num;                                                        // 当前已经存放的observer对象数量
-    int data;                                                       // 被观察的数据
+    struct observer *observer_list[MAX_OBSERVER_NUMS];              // 瀛樻斁observer瀵硅薄
+    int num;                                                        // 褰撳墠宸茬粡瀛樻斁鐨刼bserver瀵硅薄鏁伴噺
+    int data;                                                       // 琚瀵熺殑鏁版嵁
 
-    void (*add)(struct subject *subject, struct observer *observer);// 添加observer对象
-    void (*del)(struct subject *subject, struct observer *observer);// 删除observer对象
-    void (*notify)(struct subject *subject);                        // 通知所有的observer对象
+    void (*add)(struct subject *subject, struct observer *observer);// 娣诲姞observer瀵硅薄
+    void (*del)(struct subject *subject, struct observer *observer);// 鍒犻櫎observer瀵硅薄
+    void (*notify)(struct subject *subject);                        // 閫氱煡鎵�鏈夌殑observer瀵硅薄
 };
 typedef struct subject subject_t;
 

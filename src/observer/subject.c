@@ -40,7 +40,7 @@ subject_t *subject_create(void)
         subject->num = 0;
         subject->data = 0;
     }
-   
+
     return subject;
 }
 
